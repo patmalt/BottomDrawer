@@ -70,9 +70,11 @@ struct Detail: View {
         HStack {
             VStack {
                 Group {
-                    Label("Hello, World", systemImage: "pencil")
+                    Label("Hello, World", systemImage: "pencil").padding().background(Color.white).cornerRadius(10)
+                    Spacer()
                 }
                 .padding()
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
                 Spacer()
             }
             Spacer()
